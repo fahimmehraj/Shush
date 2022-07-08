@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "shush",
+  "version": "${version}",
+  "name": "Shush",
+  "description": "End to end encryption for minecraft whispers",
+  "authors": [
+    "frykher"
+  ],
+  "contact": {
+    "repo": "https://github.com/frykher/Shush"
+  },
+  "license": "MIT",
+  "icon": "assets/shush/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "studio.krykher.shush.client.ShushClient"
+    ],
+    "main": [
+      "studio.krykher.shush.Shush"
+    ]
+  },
+  "mixins": [
+    "shush.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.8",
+    "fabric": "*",
+    "minecraft": "1.19"
+  }
+}
